@@ -16,10 +16,10 @@ public class Program
             Market market = new Market(ativo);
             
             bool enabled = true;
+            Console.WriteLine("Aguardando dados novos...\n");
             while(enabled){   
-                Console.WriteLine("Aguardando dados novos...");
                 market.UpdateData();
-                
+
                 if(market.price >= valor_de_venda){
                     settings.subject = "Venda " + ativo;
                     settings.body = "Valor de " + ativo + $" em  {market.price:N2}  BRL";
@@ -31,6 +31,7 @@ public class Program
                     settings.body = "Valor de " + ativo + $" em  {market.price:N2}  BRL";
                     SendEmail.Send(settings);
                 }
+                Console.WriteLine("Aguardando dados novos...\n");
                 System.Threading.Thread.Sleep(900000);
             }
         }
