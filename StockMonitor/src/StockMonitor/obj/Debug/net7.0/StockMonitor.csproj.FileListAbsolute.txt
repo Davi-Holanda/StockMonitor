@@ -1,0 +1,15 @@
+C:\Users\DAVI\StockMonitor\src\StockMonitor\bin\Debug\net7.0\StockMonitor.exe
+C:\Users\DAVI\StockMonitor\src\StockMonitor\bin\Debug\net7.0\StockMonitor.deps.json
+C:\Users\DAVI\StockMonitor\src\StockMonitor\bin\Debug\net7.0\StockMonitor.runtimeconfig.json
+C:\Users\DAVI\StockMonitor\src\StockMonitor\bin\Debug\net7.0\StockMonitor.dll
+C:\Users\DAVI\StockMonitor\src\StockMonitor\bin\Debug\net7.0\StockMonitor.pdb
+C:\Users\DAVI\StockMonitor\src\StockMonitor\obj\Debug\net7.0\StockMonitor.csproj.AssemblyReference.cache
+C:\Users\DAVI\StockMonitor\src\StockMonitor\obj\Debug\net7.0\StockMonitor.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DAVI\StockMonitor\src\StockMonitor\obj\Debug\net7.0\StockMonitor.AssemblyInfoInputs.cache
+C:\Users\DAVI\StockMonitor\src\StockMonitor\obj\Debug\net7.0\StockMonitor.AssemblyInfo.cs
+C:\Users\DAVI\StockMonitor\src\StockMonitor\obj\Debug\net7.0\StockMonitor.csproj.CoreCompileInputs.cache
+C:\Users\DAVI\StockMonitor\src\StockMonitor\obj\Debug\net7.0\StockMonitor.dll
+C:\Users\DAVI\StockMonitor\src\StockMonitor\obj\Debug\net7.0\refint\StockMonitor.dll
+C:\Users\DAVI\StockMonitor\src\StockMonitor\obj\Debug\net7.0\StockMonitor.pdb
+C:\Users\DAVI\StockMonitor\src\StockMonitor\obj\Debug\net7.0\StockMonitor.genruntimeconfig.cache
+C:\Users\DAVI\StockMonitor\src\StockMonitor\obj\Debug\net7.0\ref\StockMonitor.dll
