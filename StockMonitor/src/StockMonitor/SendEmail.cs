@@ -5,8 +5,6 @@ namespace StockMonitor;
 public class SendEmail
 {
     public static void Send(EmailSettings settings){
-        Console.WriteLine("Montando email...");
-
         MailMessage mail = new MailMessage();
         var smtpClient = new SmtpClient(settings.host, settings.port);
         smtpClient.EnableSsl = true;
