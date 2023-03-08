@@ -9,19 +9,31 @@ You should have 3 .txt files in the same folder as the main program:
 
 1. smtp_settings.txt, which should contain the access settings for the SMTP server as follow:
 
+--------------------
+
 smtp host = "{host}"
+
 smtp port = "{port}"
 
-Change {host} and {port} to your settings, I'm going to use the default {host} = smtp.gmail.com and {port} = 587
+--------------------
+
+
+  Change {host} and {port} to your settings, I'm going to use the default {host} = smtp.gmail.com and {port} = 587
 
 2. email_from_settings.txt, which should contain the access settings for the email which will send the messages.
 The file should follow the template:
 
+-------------------------------------
+
 mail address = "{email}"
+
 mail user = "{user}"
+
 mail app password = "{app password}"
 
-Change {email}, {user} and {app password} to your settings. Usually {email} = {user}@gmail.com or something similar.
+--------------------------------------
+
+  Change {email}, {user} and {app password} to your settings. Usually {email} = {user}@gmail.com or something similar.
 Attention for the {app password}. It is NOT the email password, it is a password specific for applications.
 You can get your {app password} going to the email settings > security, problably after completing the 2-step verification.
 
