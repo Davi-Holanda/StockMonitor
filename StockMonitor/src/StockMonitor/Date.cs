@@ -1,6 +1,7 @@
 namespace StockMonitor;
 
-public class Date{
+public class Date
+{
     string week_day = "";
     int time = 0;
     int bovespa_open_hour = 10 * 60;
