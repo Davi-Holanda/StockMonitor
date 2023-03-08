@@ -20,20 +20,20 @@ public class Market
             string hora = ultimo_update;
             int tentativas_sem_update = 0;
             string data = "";
-            bool bolsa_fechada = false;
 
             while(hora == ultimo_update){
-                if(bolsa_fechada){
-                    Console.WriteLine("Esperando abertura da bolsa...");
-                    Console.WriteLine("Caso esteja aberta, ocorreu um erro.\n");
-                    System.Threading.Thread.Sleep(30 * 60 * 1000);
+                if(Date.BovespaIsClosed()){
+                    Console.WriteLine("A bolsa esta fechada");
+                    Console.WriteLine("Aguardando abertura...\n");
+                    tentativas_sem_update = 0;
+                    System.Threading.Thread.Sleep(Date.NextBovespaOpening());
                 }
                 else if(tentativas_sem_update >= 20){
-                    Console.WriteLine("1 hora sem atualização.");
-                    Console.WriteLine("Caso a bolsa tenha fechado, o funcionamento volta ao normal em 15 horas.");
-                    Console.WriteLine("Caso contrário, ocorreu um erro.\n");
-                    bolsa_fechada = true;
-                    System.Threading.Thread.Sleep(14 * 60 * 60 * 1000);
+                    Console.WriteLine("Erro");
+                    Console.WriteLine("2 hora sem atualização.");
+                    Console.WriteLine("Desativando programa ate a proxima abertura da bolsa.\n");
+                    tentativas_sem_update = 0;
+                    System.Threading.Thread.Sleep(Date.NextBovespaOpening());
                 }
                 else if(tentativas_sem_update > 0){
                     System.Threading.Thread.Sleep(120000);
@@ -52,7 +52,7 @@ public class Market
             ultimo_update = hora;
 
             Console.WriteLine("Update mais recente: " + data + " " + hora + " UTC");
-            Console.WriteLine($"Valor:  {price:N2}\n");
+            Console.WriteLine($"Valor:  {price:N2}  BRL\n");
         }
     }
 }
