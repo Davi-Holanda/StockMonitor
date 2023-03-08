@@ -65,3 +65,8 @@ Where:
 {Buy} -> Stock price that, if hit, an email should be sent warning it (problably because you would want to buy, so, usually, {Sell} > {Buy}).
 
 {Sell} and {Buy} should have the decimal places separated by comma, NOT dot.
+
+# Warnings
+You might want to change some values on the Date.cs file. The variables bovespa_open_hour and bovespa_close_hour are the times of opening and closure of bovespa, int minutes past the midnight (10:00 AM correspond to the value 10 * 60).
+
+"sexta-feira", "sábado" and "domingo" correspond to friday, saturday and sunday. It should have the exact format as your computer gives the week days.
