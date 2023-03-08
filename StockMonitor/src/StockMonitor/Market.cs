@@ -28,7 +28,7 @@ public class Market
                     tentativas_sem_update = 0;
                     System.Threading.Thread.Sleep(Date.NextBovespaOpening());
                 }
-                else if(tentativas_sem_update >= 20){
+                else if(tentativas_sem_update >= 50){
                     Console.WriteLine("Erro");
                     Console.WriteLine("2 hora sem atualização.");
                     Console.WriteLine("Desativando programa ate a proxima abertura da bolsa.\n");
